@@ -1,0 +1,28 @@
+{
+  "name": "vocechat-pc",
+  "version": "1.0.0",
+  "description": "desktop for vocechat",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "package-darwin": "electron-forge package --arch=x64 --platform=darwin",
+    "make": "electron-forge make",
+    "make-darwin": "electron-forge make --arch x64 --platform darwin",
+    "make-win": "electron-forge make --arch x64 --platform win32"
+  },
+  "author": "Tristan",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-dmg": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "electron": "^24.1.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
