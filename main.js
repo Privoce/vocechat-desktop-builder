@@ -1,9 +1,9 @@
 // main.js
-
+require("dotenv").config();
 // Modules to control application life and create native browser window
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
-
+console.log("process.env.VOCECHAT_URL", process.env.VOCECHAT_URL);
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
@@ -24,7 +24,7 @@ const createWindow = () => {
     }
   });
   // and load the index.html of the app.
-  mainWindow.loadURL("https://vocechat-web-alex.vercel.app");
+  mainWindow.loadURL(process.env.VOCECHAT_URL);
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
